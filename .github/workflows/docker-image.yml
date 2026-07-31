@@ -33,7 +33,7 @@ jobs:
         NEW_VERSION: ${{steps.version.outputs.version}}
         
       run: |
-        echo "NEW VERSION: $NEW_VERSION !!!
+        echo "NEW VERSION: $NEW_VERSION !!!"
         echo "Iniciando login"
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         echo "Fin del login"
